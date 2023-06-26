@@ -1,0 +1,438 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+/* Resetting default settings */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto",sans-serif;
+}
+
+/* Navbar section started here */
+.full-nav{
+    background-color: #2874f0;
+    height: 56px;
+    width: 100%;
+}
+.nav-container{
+    max-width: 1000px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+}
+
+
+/* Logo css */
+.logo-container{
+    color: #fff;
+    flex: 1;
+}
+.logo-container a{
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo-container p{
+    font-size: 11px;
+    font-style: italic;
+    color: #e1e1e1;
+}
+.logo-container p:hover{
+    text-decoration: underline;
+}
+
+.logo-container img{
+    width: 75px;
+}
+#plus-text{
+    color: yellow;
+}
+#plus-logo img{
+    width: 10px;
+}
+
+
+
+/* Search bar css */
+.search-container{
+    flex: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.search-container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    
+}
+.search-container input{
+    height: 35px;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+}
+.search-icon{
+    border: none;
+    height: 35px;
+    width: 40px;
+    background-color: #fff;
+    color: #2874f0;
+    font-size:1.2rem;
+    padding-right: .4rem;
+}
+.prev-search-container{
+    position: absolute;
+    width: 100%;
+    top: 45.6px;
+    left: 0;
+    background-color: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.131);
+    box-shadow:1px 2px 5px rgba(0, 0, 0, 0.417);
+    display: none;
+    z-index: 10;
+}
+
+.discover-more{
+    border-top: 1px solid rgb(239, 239, 239);
+}
+.discover-more h5{
+    margin-left: .8rem;
+    color: rgb(160, 160, 160);
+    padding-top: .5rem;
+}
+.discover-more > p,.prev-searches > p{
+    padding:.8rem;
+    color: rgb(98, 98, 98);
+    font-size: .9rem;
+}
+
+.discover-more > p:hover,.prev-searches > p:hover{
+    background-color:#2875f010;
+}
+
+.search-container-icons{
+    color: rgb(129, 129, 129);
+    margin-right: 1.5rem;
+    font-size: 1.1rem;
+}
+/* Login */
+
+.login-container{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+    position: relative;
+}
+.login-container> a{
+    display: inline-block;
+    text-decoration: none;
+    color:#2874f0;
+    background-color: #fff;
+    border: 2px solid #fff;
+    padding: .2rem 2.2rem;
+    font-weight: 500;
+} 
+.login-submenu-container{
+    position: absolute;
+    top: 56px;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 230px;
+    border-radius: 2px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+
+.login-submenu-item{
+    border-top: 1px solid rgb(236, 236, 236);
+    font-size: .9rem;
+}
+
+.login-submenu-item > a{
+    text-decoration: none;
+    display: block;
+    padding: .8rem 1rem;
+    color: black;
+}
+.login-submenu-item > a:hover{
+    background-color:#7373730b;
+}
+.login-submenu-top{
+    border-top: none;
+    display: flex;
+    padding: .8rem 1rem;
+    justify-content: space-between;
+}
+.login-submenu-top a{
+    display: inline;
+    padding: 0;
+    color: #2874f0;
+}
+.login-submenu-top a:hover{
+    text-decoration: underline;
+}
+
+
+.login-submenu-icon{
+    margin-right: .7rem;
+    color: #2874f0;
+}
+#popuptriangle{
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0; 
+    height: 0; 
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #fff;
+}
+.login-container:hover .login-submenu-container{
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Seller  tab*/
+.seller-container{
+    flex:1.3;
+    width: 100%;
+    height: 100%;
+}
+.seller-container a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/* More tab*/
+.more-container{
+    flex:.8;
+    position: relative;
+}
+
+.more-container p{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 500;
+}
+.down-arrow{
+    font-size: 9px;
+    margin-left: .3rem;
+}
+
+.more-container:hover .down-arrow{
+    transform: rotate(180deg);
+}
+.more-container:hover .more-submenu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.more-submenu{
+    position: absolute;
+    width: 250px;
+    top: 56px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+.more-submenu-item a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: .8rem 1rem;
+    border-top: 1px solid rgb(236, 236, 236);
+    font-size: .9rem;
+}
+.more-submenu-item a:hover{
+    background-color:#7373730b;
+}
+
+
+
+.more-submenu-icon{
+    margin-right: 1rem;
+    color: #2874f0;
+}
+
+/* Cart */
+.cart-container{
+    flex: 0.8;
+}
+.cart-container a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cart-icon{
+    margin-right: .3rem;
+}
+
+
+/* Main container */
+
+/* Category bar */
+.product-categories{
+    display: flex;
+    gap: 1rem;
+    border-bottom: 1px solid rgb(208, 208, 208);
+    
+}
+.prod-categories-item{
+    flex:1;
+    position: relative;
+    padding: 1rem 0;
+}
+.prod-cat-wide{
+    flex:1.3;
+}
+
+.prod-categories-item > a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+    font-weight: 500;
+}
+.prod-categories-item > a:hover{
+    color: #2874f0;
+}
+.prod-categories-item  img{
+    width: 64px;
+    height: 64px;
+    margin-bottom: .5rem;
+}
+
+.cat-down-arrow{
+    font-size: .7rem;
+    margin-left: .3rem;
+    font-weight: 500;
+}
+
+.prod-categories-item:hover .cat-down-arrow i{
+    transform: rotate(180deg);
+    color: #2874f0;
+}
+
+/* categories submenu */
+
+
+.submenu-container{
+    position: absolute;
+    top:100%; 
+    background-color: #fff; 
+    display: none;
+} 
+.prod-categories-item:hover .submenu-container{
+    display: block;
+}
+
+.both-container{
+    width: 230px;
+    padding: 1rem .4rem;
+    box-shadow: 2px 3px 8px rgb(162, 162, 162);
+}
+#left-submenu{
+    z-index: 1;
+}
+
+.submenu-subcontainer{
+    display: flex;
+}
+
+#cat-triangle-popup{
+    position: absolute;
+    top: -7px;
+    width: 13px;
+    height: 13px;
+    left: 40px;
+    background-color:#fff;
+    transform: rotate(45deg);
+    box-shadow: -.8px -.8px 2px rgb(227, 227, 227);
+    z-index: 2;
+} 
+
+.prod-submenu-item > a{
+    display: inline-block;
+    width: 100%;
+    padding: .5rem .5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+    font-weight: 500;
+
+}
+.prod-submenu-item > a:hover{
+    background-color: rgba(228, 228, 228, 0.23);
+}
+.prod-submenu-item > a:hover .cat-right-arrow{
+    display: block;
+}
+.prod-submenu-item > a:hover{
+    color: #2874f0;
+    font-weight: 700;
+} 
+.cat-right-arrow{
+    color:#2874f0;
+    font-size: .7rem;
+    display: none;
+}
+
+/* Electronic submenu */
+
+#electronic-submenu{
+    left: 50%;
+    transform: translateX(-50%);
+}
+#electronic-submenu #cat-triangle-popup{
+    left: 50%
+}
