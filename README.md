@@ -1,2 +1,2 @@
 # flipkartclone
-Flipkart clone using HTML, CSS, JavaScript
+Flipkart clone using HTML, CSS and JavaScript
