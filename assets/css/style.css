@@ -15,6 +15,8 @@ body{
     background-color: #2874f0;
     height: 56px;
     width: 100%;
+    position: fixed;
+    z-index: 20;
 }
 .nav-container{
     max-width: 1000px;
@@ -145,6 +147,7 @@ body{
     border: 2px solid #fff;
     padding: .2rem 2.2rem;
     font-weight: 500;
+    cursor: pointer;
 } 
 .login-submenu-container{
     position: absolute;
@@ -210,6 +213,117 @@ body{
     opacity: 1;
 }
 
+
+/* login-popup */
+.container{
+    position: relative;
+}
+.login-popup{
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.544);
+    display: none;
+}
+
+.login-main-box{
+    width: 54vw;
+    height: 88vh;
+    display: flex;
+    overflow: auto;
+}
+.login-left-box{
+    flex: 1.5;
+    background-color: #2874f0;
+    padding: 2.5rem 2rem;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.login-left-box h2{
+    color: #fff;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.login-left-box p{
+    color:rgb(236, 236, 236);
+    margin-top: 1.8rem;
+    font-size: 1.1rem;
+    padding-right: 2rem;
+    line-height: 2rem;
+}
+
+.login-img{
+    width: 100%;
+    height: 150px;
+    background: url(../img/logo/login_img_c4a81e.png) no-repeat center center;
+}
+
+
+.login-right-box{
+    flex: 2.5;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background-color: #fff;
+    padding:1.8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.topbox form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    width: 100%;
+    height: 100%;
+}
+.topbox form input{
+    padding: .5rem;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    outline: none;
+}
+.form-inner-text{
+    font-size: .8rem;
+    color: rgb(145, 145, 145);
+    margin-bottom: 1rem;
+}
+.form-inner-text a{
+    text-decoration: none;
+    color: #2874f0;
+}
+#button-login{
+    padding: .9rem 0;
+    font-size: .9rem;
+    background-color: rgb(255, 98, 0);
+    border: none;
+    color: #fff;
+}
+
+.bottombox p{
+    color: #2874f0;
+    text-align: center;
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+#cross-mark{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: .4rem;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+}
 /* Seller  tab*/
 .seller-container{
     flex:1.3;
@@ -279,6 +393,7 @@ body{
     border-top: 1px solid rgb(236, 236, 236);
     font-size: .9rem;
 }
+
 .more-submenu-item a:hover{
     background-color:#7373730b;
 }
@@ -314,19 +429,23 @@ body{
 /* Category bar */
 .product-categories{
     display: flex;
-    gap: 1rem;
+    gap: 1.4rem;
     border-bottom: 1px solid rgb(208, 208, 208);
+    justify-content: center;
+    position:relative;
+    top: 56px;
     
 }
 .prod-categories-item{
-    flex:1;
     position: relative;
-    padding: 1rem 0;
-}
-.prod-cat-wide{
-    flex:1.3;
 }
 
+#corner-right{
+    padding-left: .7rem
+}
+#corner-left{
+    padding-right:.7rem ;
+}
 .prod-categories-item > a{
     display: inline-block;
     width: 100%;
@@ -339,9 +458,8 @@ body{
     color: black;
     font-size: .8rem;
     font-weight: 500;
-}
-.prod-categories-item > a:hover{
-    color: #2874f0;
+    padding: 1rem .6rem;
+  
 }
 .prod-categories-item  img{
     width: 64px;
@@ -359,6 +477,9 @@ body{
     transform: rotate(180deg);
     color: #2874f0;
 }
+.prod-categories-item:hover .cat_para{
+    color:#2874f0;
+}
 
 /* categories submenu */
 
@@ -374,9 +495,9 @@ body{
 }
 
 .both-container{
-    width: 230px;
-    padding: 1rem .4rem;
-    box-shadow: 2px 3px 8px rgb(162, 162, 162);
+    width: 240px;
+    padding: 1rem .6rem;
+    box-shadow: 2px 2px 7px rgba(130, 130, 130, 0.38);
 }
 #left-submenu{
     z-index: 1;
@@ -401,25 +522,27 @@ body{
 .prod-submenu-item > a{
     display: inline-block;
     width: 100%;
-    padding: .5rem .5rem;
+    padding: .5rem .6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    color: black;
-    font-size: .8rem;
-    font-weight: 500;
+    color: rgb(25, 25, 25);
+    font-size: .9rem;
+}
 
+.prod-submenu-item p{
+    color: rgb(150, 150, 150);
+    font-size: .75rem;
+    font-weight: 500;
+    
 }
 .prod-submenu-item > a:hover{
     background-color: rgba(228, 228, 228, 0.23);
 }
-.prod-submenu-item > a:hover .cat-right-arrow{
-    display: block;
-}
 .prod-submenu-item > a:hover{
     color: #2874f0;
-    font-weight: 700;
+    font-weight: 500;
 } 
 .cat-right-arrow{
     color:#2874f0;
@@ -435,4 +558,37 @@ body{
 }
 #electronic-submenu #cat-triangle-popup{
     left: 50%
+}
+
+/* home & funiture */
+#hfurn_submenu{
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hfurn_submenu #cat-triangle-popup{
+    left: 50%;
+}
+
+/*  Toy Beauty & More*/
+#toybeauty_submenu{
+    left:100%;
+    transform: translateX(-100%);
+}
+#toybeauty_submenu #cat-triangle-popup{
+    left: 85%;
+}
+
+/* Two wheeler category */
+#twowheeler_submenu{
+    left: 130%;
+    transform: translateX(-130%);
+}
+#twowheeler_submenu #cat-triangle-popup{
+    left: 85%;
+}
+
+
+.right-container .prod-submenu-item .activeElement{
+    color: #2874f0;
+    font-weight: 500;
 }

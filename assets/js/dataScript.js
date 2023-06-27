@@ -1,5 +1,5 @@
 const fashionObj = {
-    "Men's Top Wear": [
+    "Men's Top Wear": [ "MORE IN MEN'S TOP WEAR",
                         "All",
                         "Men's T-shirts",
                         "Men's Casual Shirts",
@@ -14,6 +14,7 @@ const fashionObj = {
                     ],
 
     "Men's Bottom Wear":[
+                        "MORE IN MEN'S BOTTOM WEAR",
                         "All",
                         "Men's Jeans",
                         "Men's Trousers",
@@ -27,6 +28,7 @@ const fashionObj = {
                     ],
 
     "Women Ethnic":[   
+                        "MORE IN WOMEN ETHNIC",
                         "All",
                         "Women Sarees",
                         "Women Kutas & Kuties",
@@ -42,6 +44,7 @@ const fashionObj = {
                         "Women Dupattas"
                     ],
     "Women Western":[
+                        "MORE IN WOMEN WESTERN",
                         "All",
                         "Women Tops",
                         "Women Dresses",
@@ -56,6 +59,7 @@ const fashionObj = {
                         "Women Sport Bra"
                     ],
     "Men's Footwear":[
+                        "MORE IN MEN'S FOOTWEAR",
                         "All",
                         "Men's Sport Shoes",
                         "Men's Casual Shoes",
@@ -68,6 +72,7 @@ const fashionObj = {
                         "Shoes Care"
                     ],
     "Women Footwear":[
+                        "MORE IN WOMEN FOOTWEAR",
                         "All",
                         "Women Flats",
                         "Women Heels",
@@ -82,6 +87,7 @@ const fashionObj = {
                         "Women Bootes"
     ],
     "Watches and Accessories":[
+                        "MORE IN WATCHES AND ACCESSORIES",
                         "Men & Women Watches",
                         "Men & Women Sunglasses",
                         "Wallets",
@@ -95,6 +101,7 @@ const fashionObj = {
                         "Kid Accessories"
                     ],
     "Bag, Suitcases & Luggage":[
+                        "MORE IN BAG, SUITCASE & LUGGAGE",
                         "All",
                         "Bags & Backpacks",
                         "Suitcase & Trolleys",
@@ -107,6 +114,7 @@ const fashionObj = {
                         "Travell Accessories"
     ],
     "Kids":[
+                        "MORE IN KIDS",
                         "All",
                         "Girls Dresses",
                         "Boys & Girls Tshirts",
@@ -121,6 +129,7 @@ const fashionObj = {
                         "Kids Sport Shoes"
     ],
     "Essentials":[
+                        "MORE IN ESSENTIALS",
                         "Men's Briefs & Trunks",
                         "Men's Vests",
                         "Men's Boxers",
@@ -136,6 +145,7 @@ const fashionObj = {
                         "Women Slipper Flip Flops"
     ],
     "Winter":[
+                        "MORE IN WINTER",
                         "All",
                         "Men's Jackets",
                         "Men's Sweatshirts",
@@ -152,7 +162,8 @@ const fashionObj = {
 }
 
 const electronicsObj = {
-    "Audio":[           "All",
+    "Audio":[           "MORE IN AUDIO",
+                        "All",
                         "Bluetooth Headphones",
                         "Wired Headphones",
                         "True Wireless Earbuds",
@@ -165,7 +176,9 @@ const electronicsObj = {
                         "Headphones Pouch & Case Covers",
     ],
     "Electronics GST Store":[],
-    "Cameras & Accessories":["All",
+    "Cameras & Accessories":[
+                        "MORE IN CAMERAS & ACCESSORIES",
+                        "All",
                         "DSLR & Mirrorless",
                         "Sports & action",
                         "Point & Shoot",
@@ -179,7 +192,9 @@ const electronicsObj = {
                         "Binoculars",
                         "Other Camera Access"
                     ],
-    "Computer Peripherals":["All",
+    "Computer Peripherals":[
+                        "MORE IN COMPUTER PERIPHERALS",
+                        "All",
                         "Printers",
                         "Monitors",
                         "Projectors",
@@ -193,7 +208,9 @@ const electronicsObj = {
                         "Barcode Scanners",
                         "Currency Detectors",
                     ],
-    "Gaming":[          "All",
+    "Gaming":[ 
+                        "MORE IN GAMING",
+                        "All",
                         "Gaming Consoles",
                         "Gaming Mouse",
                         "Gaming Keyboards",
@@ -207,7 +224,9 @@ const electronicsObj = {
                         "Other Gaming Accessories",
                         "Gaming Components"
                     ],
-    "Health & Personal Care":["All",
+    "Health & Personal Care":[
+                        "MORE IN HEALTH",
+                        "All",
                         "Trimmers",
                         "Shavers",
                         "Hair Straighteners",
@@ -221,7 +240,9 @@ const electronicsObj = {
                         "Nebulizers",
                         "Vaporizers"
                     ],
-    "Laptop Accessories":["All",
+    "Laptop Accessories":[
+                        "MORE IN LAPTOP ACCESSORIES",
+                        "All",
                         "Mouse",
                         "Laptop Keyboards",
                         "Router",
@@ -235,7 +256,9 @@ const electronicsObj = {
                         "Processor",
                         "Other Accessories"
                     ],
-    "Laptop and Desktop":["All",
+    "Laptop and Desktop":[
+                        "MORE IN LAPTOP AND DESKTOP",
+                        "All",
                         "Laptops",
                         "Gaming Laptops",
                         "Desktop PCs",
@@ -246,7 +269,9 @@ const electronicsObj = {
                         "GST Invoice on Laptops",
                         "Laptop Buying Guide"
                     ],
-    "MobileAccessory":["All",
+    "Mobile Accessory":[
+                        "MORE IN MOBILE ACCESSORY",
+                        "All",
                         "Plain Cases",
                         "Designer Cases",
                         "Screen Guards",
@@ -261,10 +286,12 @@ const electronicsObj = {
                         "Mobiles Accessories Combos"
     ],
     "Powerbank":[
+                        "MORE IN POWERBANK",
                         "All",
                         "Powerbank"
     ],
     "Smart Home automation":[
+                        "MORE IN SMART HOME AUTOMATION",
                         "All",
                         "Smart Assistants",
                         "Smart Lights",
@@ -274,12 +301,14 @@ const electronicsObj = {
                         "Sensors & Alarms"
     ],
     "Smart Wearables":[
+                        "MORE IN SMART WEARABLES",
                         "All",
                         "Smart Watches",
                         "Smart Bands",
                         "Smart Glasses"
     ],
     "Storage":[
+                        "MORE IN STORAGE",
                         "All",
                         "MobileMemoryCard",
                         "ComputerStoragePendrive",
@@ -287,7 +316,9 @@ const electronicsObj = {
                         "ExternalHardDrive",
                         "InternalHardDrive"
     ],
-    "Tablets":[         "All",
+    "Tablets":[         
+                        "MORE IN TABLETS",
+                        "All",
                         "Tablets With Call Facility",
                         "Tablets Without Call Facility"
                     ]
@@ -296,17 +327,371 @@ const electronicsObj = {
 
 
 
+const homeFurnitureObj = {
+    "Home Furnishings":[
+                        "MORE IN HOME FURNISHING",
+                        "All",
+                        "Bed Linens",
+                        "Bedsheets",
+                        "Blankets",
+                        "Curtains & Accessories",
+                        "Bath linen",
+                        "Floor coverings",
+                        "Covers & protectors",
+                        "Cushions & Pillows",
+                        "Kitchen Linen Sets",
+                        "Table Linen Sets",
+                        "Sofa & curtain fabrics",
+                        "Branded Collections"
+
+    ],
+    "Furniture Studio":[],
+    "Living Room Furniture":[
+                        "MORE IN LIVING ROOM FURNITURE",
+                        "All",
+                        "Sofas Sets & Sectionals",
+                        "TV Units",
+                        "Dining Sets",
+                        "Coffee Tables",
+                        "Sofa Beds",
+                        "Recliners",
+                        "Living Room Chairs",
+                        "Cabinet & Drawers",
+                        "Bookshelves",
+                        "Shoe Racks",
+                        "Office Tables",
+                        "Office Chairs"                  
+    ],
+    "Kitchen & Dining":[
+                        "MORE IN KITCHEN & DINING",
+                        "All",
+                        "Cookware",
+                        "Lunchboxes, Bottles & Flasks",
+                        "Knives, Choppers & Cutters",
+                        "Gas Stoves & Accessories",
+                        "Kitchen tools",
+                        "Tableware & Dinnerware",
+                        "Containers & Kitchen Storage",
+                        "Barware",
+                        "Bakeware",
+                        "Handjuicers & Grinders",
+                        "Disposable Supplies",
+                        "Outdoor cooking"
+    ],
+    "Bedroom Furniture":[
+                        "MORE IN BEDROOM FURNITURE",
+                        "All",
+                        "Mattresses",
+                        "Beds",
+                        "Wardrobes",
+                        "Side Tables",
+                        "TV Units",
+                        "Office Tables",
+                        "Office Chairs",
+                        "Bookshelves",
+                        "Bar Cabinets",
+                        "Bar Stools",
+                        "Rocking Chairs",
+                        "Benches"
+                    ],
+    "Home Decor":[
+                        "MORE IN HOME DECOR",
+                        "All",
+                        "Lightings",
+                        "Stickers & Wallpapers",
+                        "Paintings & Posters",
+                        "Clocks",
+                        "Showpieces & Decoratives",
+                        "Wall Decor",
+                        "Flowers & Vases",
+                        "Home Fragrances",
+                        "Windchimes & Dream catcher",
+                        "Photo frames & Albums",
+                        "Diyas, Candles & Holders",
+                        "Festive & Giftng"
+    ],
+    "Tools & Utility":[
+                        "MORE IN TOOLS & UTILITY",
+                        "All",
+                        "Hand tools",
+                        "Power Tools",
+                        "Measuring Tools",
+                        "Home Storage & Organizers",
+                        "Umbrellas",
+                        "Appliance Trolley & Stands",
+                        "Cloth Dryer Stand",
+                        "Appliance Filter & Cartridges",
+                        "Laundary Organization",
+                        "Lock & Security",
+                        "Fire & Personal Safety",
+                        "Paint Supplies & Equipment"
+    ],
+    "Work Space Furniture":[],
+    "Lightings & Electricals":[
+                        "MORE IN LIGHTINGS & ELECTRICALS",
+                        "All",
+                        "Bulbs",
+                        "Emergency Lights",
+                        "Torches",
+                        "Tubelights",
+                        "Extension Cords",
+                        "Outdoor Lamps",
+                        "Batteries",
+                        "ElectricalWire",
+                        "ElectricalSocket",
+                        "ElectricDoorBell",
+                        "Solar Lights, Panels & Batteries",
+                        "Electrical Hardware"
+    ],
+    "Space Saving Furniture":[
+                        "MORE IN SPACE SAVING FURNITURE",
+                        "All",
+                        "Portable Laptop Tables",
+                        "Collapsible Wardrobes",
+                        "Bean Bags & Covers",
+                        "Shoe Racks",
+                        "Cabinet Drawers",
+                        "Inflatable Sofas",
+                        "Hammock Swings",
+                        "Home Temples",
+                        "Bookshelves",
+                        "TV Mounts",
+                        "Kitchen Trolley",
+                        "Kitchen Cabinet"
+    ],
+    "Cleaning & Bath":[
+                        "MORE IN CLEANING & BATH",
+                        "All",
+                        "Mops",
+                        "Cleaning Supplies",
+                        "House Hold supplies",
+                        "Air Fresheners",
+                        "Cleaning Gloves",
+                        "Liquid Detergents",
+                        "Taps & Faucet",
+                        "Toothbrush holder",
+                        "Bathroom Rack & Shelves",
+                        "Shower Heads",
+                        "Bath & Kitchen Fittings",
+                        "Bathroom Accesorries"
+    ],
+    "Kids Furniture":[
+                        "MORE IN KIDS FURNITURE",
+                        "All",
+                        "Bunk Beds",
+                        "Kids' Seating",
+                        "Kids' Table",
+                        "Kids' Chairs",
+                        "Kids' Sofas",
+                        "Bookshelves",
+                        "Chest of Drawers",
+                        "Cupboards",
+                        "Shoe Racks",
+                        "Kids' Bean Bags",
+                        "Portable Pool",
+                        "Sofa Beds"
+    ],
+    "Pet & Gardening":[
+                        "MORE IN PET & GARDENING",
+                        "All",
+                        "Plant Seeds",
+                        "Soil Manure",
+                        "Pots & Planters",
+                        "Plant & Planters",
+                        "garden tool set",
+                        "watering Equipments",
+                        "Dog Essentials",
+                        "Cat Essentials",
+                        "Fish & Aquatic",
+                        "Pet Grooming & Hygiene",
+                        "Pet Toys",
+                        "Pet Health & Safety"
+    ]
+}
+
+
+const beautyToysObj = {
+    "Beauty & Personal Care":[
+                        "MORE IN BEAUTY & PERSONAL CARE",
+                        "View All",
+                        "Bath & Oral Care",
+                        "Personal Hygiene",
+                        "Eye Makeup",
+                        "Face Makeup",
+                        "Lip Makeup",
+                        "Hair Care",
+                        "Bath Essentials",
+                        "Women's Personal Hygiene",
+                        "Body & Skin Care",
+                        "Luxury",
+                        "Top Brand Deals",
+    ],
+    "Men's Grooming":[
+                        "MORE IN MEN'S GROOMING",
+                        "View All",
+                        "Face Washes",
+                        "Beard Oils",
+                        "Hair Styling",
+                        "Shaving Essentials",
+                        "Aftershave",
+                        "Face Creams & Face Packs",
+                        "Soaps & Bodywashes",
+                        "Men's Grooming Combos",
+                        "Sexual Wellness"
+    ],
+    "Food & Drinks":[
+                        "MORE IN FOOD & DRINKS",
+                        "View All",
+                        "Beverages",
+                        "Nuts & Dry Fruits",
+                        "Cooking Essentials",
+                        "Breakfast Items",
+                        "Snacks Corner",
+                        "Jams, spreads & Honey",
+                        "Ready to Cook & Eat",
+                        "Chocolates",
+                        "Baking Essentials",
+                        "Sweets Store",
+                        "Top Brand Deals"
+    ],
+    "Nutrition & Health Care":[
+                        "MORE IN NUTRITION & HEALTH CARE",
+                        "View All",
+                        "Masks",
+                        "Ayurvedic Supplements",
+                        "Health Drinks",
+                        "Vitamin Supplements",
+                        "Protein Supplements",
+                        "Women's Safety",
+                        "Home Medicines",
+                        "Home Medical Supplies",
+                        "Healthcare Comos",
+                        "Professional Medical Supplies",
+                        "Top Brand Deals"
+    ],
+    "Baby Care":[
+                        "MORE IN BABY CARE",
+                        "View All",
+                        "Baby Diapers",
+                        "Baby Wipes",
+                        "Baby Bath & Grooming",
+                        "Baby Gift Sets & Combo",
+                        "Baby Medical & Health Care",
+                        "Nursing & Breast Feeding",
+                        "Feeding Bottles, Utensils & Accessories",
+                        "Baby Food",
+                        "Baby Bedding",
+                        "Baby Gear",
+                        "Top Brand Deals"
+    ],
+    "Toys & School Supplies":[
+                        "MORE IN TOY & SCHOOL SUPPLIES",
+                        "View All",
+                        "Remote Control Toys",
+                        "Soft Toys",
+                        "Puzzles",
+                        "Board Games",
+                        "Learning & Educational Toys",
+                        "Cars & Die-Cast Vehicles",
+                        "Baby Toys",
+                        "Gifting Toys",
+                        "School Bags & Backpacks",
+                        "School Supplies",
+                        "Top Brand Deals"
+    ],
+    "Sports & Fitness":[
+                        "MORE IN SPORTS & FITNESS",
+                        "View All",
+                        "Badminton",
+                        "Cricket",
+                        "Cycling",
+                        "Football",
+                        "Fitness Equipments",
+                        "Supports",
+                        "Shakers & Sippers",
+                        "Gym Gloves",
+                        "Dumbbells",
+                        "Yoga",
+                        "Top Brand Deals"
+    ],
+    "Books":[
+                        "MORE IN BOOKS",
+                        "View All",
+                        "Test prep",
+                        "Academics",
+                        "Literature & Fiction",
+                        "Non Fiction",
+                        "Young Readers",
+                        "Audio Books",
+                        "Indian Languages",
+                        "Acoustic Guitars",
+                        "Musical keyboards",
+                        "Microphones",
+                        "Stage Equipment & Accessories"
+    ],
+    "Music":[
+                        "MORE IN MUSIC",    
+                        "Musical Instruments",
+                        "Music & Tv Shows",
+                        "Acoustic Guitars",
+                        "Keys and Synthesizer",
+                        "Microphones",
+                        "Studio and Stage equipment",
+                        "String Instruments",
+                        "Indian instruments",
+                        "Wind instruments"
+    ],
+    "Stationery & Office Supplies":[
+                        "MORE IN STATIONERY & OFFICE SUPPLIES",
+                        "View All",
+                        "Pens & Gift Sets",
+                        "Notebooks & Diaries",
+                        "Art Supplies",
+                        "Calculators",
+                        "Keychains",
+                        "Card Holders",
+                        "Desk Organizers",
+                        "Office Supplies",
+                        "Office Equipments",
+                        "Party Supplies",
+                        "Top Brand Deals"
+    ],
+    "Auto Accessories":[
+                        "MORE IN AUTO ACCESSORIES",
+                        "View All",
+                        "Bike Essentials",
+                        "Car & Bike Covers",
+                        "CarAirFreshener",
+                        "CarBluetoothDevice",
+                        "CarLubricant",
+                        "CarVacuumCleaner",
+                        "CarMediaPlayer",
+                        "Helmet",
+                        "Vehicle Washing & Cleaning Products",
+                        "Tyres",
+                        "Top Brand Deals",
+    ],
+    "Safety & Hygiene Essentials":[
+                        "MORE IN SAFTETY & HYGIENE ESSESNTIALS",
+                        "View All",
+                        "Masks",
+                        "Sanitizers",
+                        "Hand Wash",
+                        "Gloves",
+                        "PPE Kits",
+                        "Face Shields",
+                        "UV Sterilizer Box",
+                        "Safety Goggles",
+                        "Vitamins for Immunity",
+    ]
+
+}
+
+const twoWheelerArr = ["Petrol Vehical","Electric Vehical"]
 
 
 
-
-
-
-
-
-
-
-export {fashionObj,electronicsObj};
+export {fashionObj,electronicsObj,homeFurnitureObj,beautyToysObj,twoWheelerArr};
 
 
 

@@ -16,183 +16,255 @@
 </head>
 
 <body>
-    <!-- Navbar section started here -->
-    <header class="full-nav">
-        <div class="nav-container">
-            <div class="logo-container">
-                <a href="">
-                    <img src="assets/img/logo/logo.png" alt="flipkart-logo">
-                    <p>Explore <span id="plus-text">Plus</span><span id="plus-logo"><img
-                                src="assets/img/logo/logoplus.png" alt="plus-logo"></span></p>
-                </a>
-            </div>
-            <div class="search-container">
-                <form id="searchform">
-                    <input id="search" type="text" name="search" placeholder="Search for products, brands and more"
-                        autocomplete="off">
-                    <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-                <div class="prev-search-container">
-                    <div class="prev-searches">
+    <div class="container">
+        <!-- Navbar section started here -->
+        <header class="full-nav">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <a href="">
+                        <img src="assets/img/logo/logo.png" alt="flipkart-logo">
+                        <p>Explore <span id="plus-text">Plus</span><span id="plus-logo"><img
+                                    src="assets/img/logo/logoplus.png" alt="plus-logo"></span></p>
+                    </a>
+                </div>
+                <div class="search-container">
+                    <form id="searchform">
+                        <input id="search" type="text" name="search" placeholder="Search for products, brands and more"
+                            autocomplete="off">
+                        <button class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                    <div class="prev-search-container">
+                        <div class="prev-searches">
+                        </div>
+                        <div class="discover-more">
+                            <h5>Discover More</h5>
+                            <p><span class="search-container-icons"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>mobile</p>
+                            <p><span class="search-container-icons"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>shoes
+                            </p>
+                            <p><span class="search-container-icons"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>tshirts</p>
+                            <p><span class="search-container-icons"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>watches</p>
+                            <p><span class="search-container-icons"><i
+                                        class="fa-solid fa-magnifying-glass"></i></span>laptop</p>
+                        </div>
                     </div>
-                    <div class="discover-more">
-                        <h5>Discover More</h5>
-                        <p><span class="search-container-icons"><i
-                                    class="fa-solid fa-magnifying-glass"></i></span>mobile</p>
-                        <p><span class="search-container-icons"><i class="fa-solid fa-magnifying-glass"></i></span>shoes
+                </div>
+                <div class="login-container">
+                    <a type="button" id="login-button">Login</a>
+                    <div class="login-submenu-container">
+                        <span id="popuptriangle"></span>
+                        <div class="login-submenu-item login-submenu-top"><span>New customer</span> <a href="">Sign
+                                Up</a>
+                        </div>
+                        <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
+                                        class="fa-solid fa-circle-user"></i></span>My Profile</a></div>
+                        <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
+                                        class="fa-solid fa-fan"></i></span>Flipkart Plus Zone</a></div>
+                        <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
+                                        class="fa-solid fa-box"></i></span>Orders</a></div>
+                        <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
+                                        class="fa-solid fa-heart"></i></span>Wishlist</a></div>
+                        <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
+                                        class="fa-solid fa-gift"></i></span>Rewards</a></div>
+                        <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
+                                        class="fa-solid fa-wallet"></i></span>Gift Cards</a></div>
+                    </div>
+                </div>
+
+                <div class="seller-container">
+                    <a href="">Become a Seller</a>
+                </div>
+                <div class="more-container">
+                    <p>More<span class="down-arrow"><i class="fa-solid fa-chevron-down"></i></span></p>
+                    <div class="more-submenu">
+                        <span id="popuptriangle"></span>
+                        <div class="more-submenu-item">
+                            <a href=""><span class="more-submenu-icon"><i
+                                        class="fa-solid fa-bell"></i></span>Notification
+                                Preferences</a>
+                        </div>
+                        <div class="more-submenu-item">
+                            <a href=""><span class="more-submenu-icon"><i
+                                        class="fa-solid fa-circle-question"></i></span>24x7 Customer Care</a>
+                        </div>
+                        <div class="more-submenu-item">
+                            <a href=""><span class="more-submenu-icon"><i
+                                        class="fa-solid fa-arrow-trend-up"></i></span>Adverties</a>
+                        </div>
+                        <div class="more-submenu-item">
+                            <a href=""><span class="more-submenu-icon"><i
+                                        class="fa-solid fa-download"></i></span>Download
+                                App</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-container">
+                    <a href="">
+                        <p><span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
+                            Cart</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main section -->
+
+
+        <main>
+            <!-- Category Bar -->
+            <div class="product-categories">
+                <div class="prod-categories-item" id="corner-left">
+                    <a href="">
+                        <img src="assets/img/categories/grocery.webp" alt="">
+                        <p class="cat_para">Grocery</p>
+                    </a>
+
+                </div>
+                <div class="prod-categories-item">
+                    <a href="">
+                        <img src="assets/img/categories/mobiles.webp" alt="">
+                        <p class="cat_para">Mobiles</p>
+                    </a>
+                </div>
+                <div class="prod-categories-item prod-cat-hover">
+                    <a href="">
+                        <img src="assets/img/categories/fashion.webp" alt="">
+                        <p class="cat_para">Fashion <span class="cat-down-arrow"><i
+                                    class="fa-solid fa-chevron-down"></i></span></p>
+                    </a>
+                    <div class="submenu-container" id="fashion-submenu">
+                        <span id="cat-triangle-popup"></span>
+                        <div class="submenu-subcontainer">
+                            <div class="both-container right-container" id="left-submenu">
+                            </div>
+                            <div class="both-container" id="right-submenu">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-categories-item" id="prod_el_item">
+                    <a href="">
+                        <img src="assets/img/categories/electronic.webp" alt="">
+                        <p class="cat_para">Electronics<span class="cat-down-arrow"><i
+                                    class="fa-solid fa-chevron-down"></i></span></p>
+                    </a>
+                    <div class="submenu-container" id="electronic-submenu">
+                        <span id="cat-triangle-popup"></span>
+                        <div class="submenu-subcontainer">
+                            <div class="both-container right-container" id="el_left_sub">
+                            </div>
+                            <div class="both-container" id="el_right_sub">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-categories-item">
+                    <a href="">
+                        <img src="assets/img/categories/homefuniture.webp" alt="">
+                        <p class="cat_para">Home & Furniture<span class="cat-down-arrow"><i
+                                    class="fa-solid fa-chevron-down"></i></span></p>
+                    </a>
+                    <div class="submenu-container" id="hfurn_submenu">
+                        <span id="cat-triangle-popup"></span>
+                        <div class="submenu-subcontainer">
+                            <div class="both-container right-container" id="left_hfurn_sub">
+
+                            </div>
+                            <div class="both-container" id="right_hfurn_sub">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="prod-categories-item">
+                    <a href="">
+                        <img src="assets/img/categories/appliances.webp" alt="">
+                        <p class="cat_para">Appliances</p>
+                    </a>
+                </div>
+                <div class="prod-categories-item">
+                    <a href="">
+                        <img src="assets/img/categories/travel.webp" alt="">
+                        <p class="cat_para">Travel</p>
+                    </a>
+                </div>
+                <div class="prod-categories-item">
+                    <a href="">
+                        <img src="assets/img/categories/offers.webp" alt="">
+                        <p class="cat_para">Top Offers</p>
+                    </a>
+                </div>
+                <div class="prod-categories-item ">
+                    <a href="">
+                        <img src="assets/img/categories/beautytoymore.webp" alt="">
+                        <p class="cat_para">Beauty, Toys & More<span class="cat-down-arrow"><i
+                                    class="fa-solid fa-chevron-down"></i></span>
                         </p>
-                        <p><span class="search-container-icons"><i
-                                    class="fa-solid fa-magnifying-glass"></i></span>tshirts</p>
-                        <p><span class="search-container-icons"><i
-                                    class="fa-solid fa-magnifying-glass"></i></span>watches</p>
-                        <p><span class="search-container-icons"><i
-                                    class="fa-solid fa-magnifying-glass"></i></span>laptop</p>
-                    </div>
-                </div>
-            </div>
-            <div class="login-container">
-                <a href="">Login</a>
-                <div class="login-submenu-container">
-                    <span id="popuptriangle"></span>
-                    <div class="login-submenu-item login-submenu-top"><span>New customer</span> <a href="">Sign Up</a>
-                    </div>
-                    <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
-                                    class="fa-solid fa-circle-user"></i></span>My Profile</a></div>
-                    <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
-                                    class="fa-solid fa-fan"></i></span>Flipkart Plus Zone</a></div>
-                    <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
-                                    class="fa-solid fa-box"></i></span>Orders</a></div>
-                    <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
-                                    class="fa-solid fa-heart"></i></span>Wishlist</a></div>
-                    <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
-                                    class="fa-solid fa-gift"></i></span>Rewards</a></div>
-                    <div class="login-submenu-item"><a href=""><span class="login-submenu-icon"><i
-                                    class="fa-solid fa-wallet"></i></span>Gift Cards</a></div>
-                </div>
-            </div>
+                    </a>
+                    <div class="submenu-container" id="toybeauty_submenu">
+                        <span id="cat-triangle-popup"></span>
+                        <div class="submenu-subcontainer">
+                            <div class="both-container right-container" id="left_toybeau_sub">
 
-            <div class="seller-container">
-                <a href="">Become a Seller</a>
-            </div>
-            <div class="more-container">
-                <p>More<span class="down-arrow"><i class="fa-solid fa-chevron-down"></i></span></p>
-                <div class="more-submenu">
-                    <span id="popuptriangle"></span>
-                    <div class="more-submenu-item">
-                        <a href=""><span class="more-submenu-icon"><i class="fa-solid fa-bell"></i></span>Notification
-                            Preferences</a>
+                            </div>
+                            <div class="both-container" id="right_toybeau_sub">
+
+                            </div>
+                        </div>
                     </div>
-                    <div class="more-submenu-item">
-                        <a href=""><span class="more-submenu-icon"><i
-                                    class="fa-solid fa-circle-question"></i></span>24x7 Customer Care</a>
-                    </div>
-                    <div class="more-submenu-item">
-                        <a href=""><span class="more-submenu-icon"><i
-                                    class="fa-solid fa-arrow-trend-up"></i></span>Adverties</a>
-                    </div>
-                    <div class="more-submenu-item">
-                        <a href=""><span class="more-submenu-icon"><i class="fa-solid fa-download"></i></span>Download
-                            App</a>
+                </div>
+                <div class="prod-categories-item" id="corner-right">
+                    <a href="">
+                        <img src="assets/img/categories/twowheelers.webp" alt="">
+                        <p class="cat_para">Two Wheelers<span class="cat-down-arrow"><i
+                                    class="fa-solid fa-chevron-down"></i></span></p>
+                    </a>
+                    <div class="submenu-container" id="twowheeler_submenu">
+                        <span id="cat-triangle-popup"></span>
+                        <div class="submenu-subcontainer">
+                            <div class="both-container" id="right_twowheeler_sub">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="cart-container">
-                <a href="">
-                    <p><span class="cart-icon"><i class="fa-solid fa-cart-shopping"></i></span>
-                        Cart</p>
-                </a>
+        </main>
+
+        <div class="login-popup">
+            <div class="login-main-box">
+                <div class="login-left-box">
+                    <div class="log-content-container">
+                        <h2>Login</h2>
+                        <p>Get access to your Orders, Wishlist and Reconmmendations</p>
+                    </div>
+                    <div class="login-img">
+                    </div>
+                </div>
+                <div class="login-right-box">
+                    <div class="topbox">
+                        <form action="">
+                            <input type="text" placeholder="Enter Email/Mobile Number">
+                            <p class="form-inner-text">By continuing, you agree to Flipkart's <a href="">Terms of Use</a> and <a href="">Privacy Policy.</a></p>
+                            <button id="button-login">Request OTP</button>
+
+                        </form>
+                    </div>
+
+                    <div class="bottombox">
+                        <p>New to Flipkart? Create an account</p>
+                    </div>
+                </div>
+                <div id="cross-mark">
+                    <span><i class="fa-solid fa-xmark"></i></span>
+                </div>
             </div>
+            
         </div>
-    </header>
-
-    <!-- Main section -->
-
-
-    <main>
-        <!-- Category Bar -->
-        <div class="product-categories">
-            <div class="prod-categories-item">
-                <a href="">
-                    <img src="assets/img/categories/grocery.webp" alt="">
-                    <p>Grocery</p>
-                </a>
-
-            </div>
-            <div class="prod-categories-item">
-                <a href="">
-                    <img src="assets/img/categories/mobiles.webp" alt="">
-                    <p>Mobiles</p>
-                </a>
-            </div>
-            <div class="prod-categories-item prod-cat-hover">
-                <a href="">
-                    <img src="assets/img/categories/fashion.webp" alt="">
-                    <p>Fashion <span class="cat-down-arrow"><i class="fa-solid fa-chevron-down"></i></span></p>
-                </a>
-                <div class="submenu-container" id="fashion-submenu">
-                    <span id="cat-triangle-popup"></span>
-                    <div class="submenu-subcontainer">
-                        <div class="both-container" id="left-submenu">
-                        </div>
-                        <div class="both-container" id="right-submenu">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="prod-categories-item" id="prod_el_item">
-                <a href="">
-                    <img src="assets/img/categories/electronic.webp" alt="">
-                    <p>Electronics<span class="cat-down-arrow"><i class="fa-solid fa-chevron-down"></i></span></p>
-                </a>
-                <div class="submenu-container" id="electronic-submenu">
-                    <span id="cat-triangle-popup"></span>
-                    <div class="submenu-subcontainer">
-                        <div class="both-container" id="el_left_sub">
-                        </div>
-                        <div class="both-container" id="el_right_sub">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="prod-categories-item prod-cat-wide">
-                <a href="">
-                    <img src="assets/img/categories/homefuniture.webp" alt="">
-                    <p>Home & Furniture<span class="cat-down-arrow"><i class="fa-solid fa-chevron-down"></i></span></p>
-                </a>
-            </div>
-            <div class="prod-categories-item">
-                <a href="">
-                    <img src="assets/img/categories/appliances.webp" alt="">
-                    <p>Appliances</p>
-                </a>
-            </div>
-            <div class="prod-categories-item">
-                <a href="">
-                    <img src="assets/img/categories/travel.webp" alt="">
-                    <p>Travel</p>
-                </a>
-            </div>
-            <div class="prod-categories-item">
-                <a href="">
-                    <img src="assets/img/categories/offers.webp" alt="">
-                    <p>Top Offers</p>
-                </a>
-            </div>
-            <div class="prod-categories-item prod-cat-wide">
-                <a href="">
-                    <img src="assets/img/categories/beautytoymore.webp" alt="">
-                    <p>Beauty, Toys & More<span class="cat-down-arrow"><i class="fa-solid fa-chevron-down"></i></span>
-                    </p>
-                </a>
-            </div>
-            <div class="prod-categories-item prod-cat-wide">
-                <a href="">
-                    <img src="assets/img/categories/twowheelers.webp" alt="">
-                    <p>Two Wheelers<span class="cat-down-arrow"><i class="fa-solid fa-chevron-down"></i></span></p>
-                </a>
-            </div>
-        </div>
-    </main>
+    </div>
     <script type="module" src="assets/js/script.js"></script>
 </body>
 
